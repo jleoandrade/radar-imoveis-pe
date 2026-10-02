@@ -1,0 +1,767 @@
+{
+ "gerado_em": "2026-10-02T08:40-03:00",
+ "proxima_atualizacao": "2026-10-03T06:10-03:00",
+ "data_da_lista": "30/09/2026",
+ "uf": "PE",
+ "total": 1060,
+ "fora_do_ar": 0,
+ "destaques": 193,
+ "novos": 470,
+ "vetados": 42,
+ "em_lote": 341,
+ "na_rmr": 631,
+ "desconto_anunciado_mediano": 0.446,
+ "desconto_real_mediano": 0.2757,
+ "nota_destaque": 0.6,
+ "cidades": [
+  {
+   "cidade": "Jaboatao Dos Guararapes",
+   "rmr": true,
+   "total": 196,
+   "destaques": 17,
+   "vetados": 9,
+   "preco_mediano": 87819.45
+  },
+  {
+   "cidade": "Paulista",
+   "rmr": true,
+   "total": 135,
+   "destaques": 38,
+   "vetados": 9,
+   "preco_mediano": 89876.85
+  },
+  {
+   "cidade": "Belo Jardim",
+   "rmr": false,
+   "total": 78,
+   "destaques": 10,
+   "vetados": 1,
+   "preco_mediano": 54101.0
+  },
+  {
+   "cidade": "Igarassu",
+   "rmr": true,
+   "total": 77,
+   "destaques": 20,
+   "vetados": 3,
+   "preco_mediano": 81716.89
+  },
+  {
+   "cidade": "Cha De Alegria",
+   "rmr": false,
+   "total": 77,
+   "destaques": 18,
+   "vetados": 0,
+   "preco_mediano": 41967.38
+  },
+  {
+   "cidade": "Sao Lourenco Da Mata",
+   "rmr": true,
+   "total": 65,
+   "destaques": 11,
+   "vetados": 0,
+   "preco_mediano": 75719.15
+  },
+  {
+   "cidade": "Olinda",
+   "rmr": true,
+   "total": 37,
+   "destaques": 6,
+   "vetados": 1,
+   "preco_mediano": 100741.08
+  },
+  {
+   "cidade": "Camaragibe",
+   "rmr": true,
+   "total": 36,
+   "destaques": 2,
+   "vetados": 1,
+   "preco_mediano": 87819.45
+  },
+  {
+   "cidade": "Itapissuma",
+   "rmr": true,
+   "total": 34,
+   "destaques": 19,
+   "vetados": 0,
+   "preco_mediano": 43669.03
+  },
+  {
+   "cidade": "Carpina",
+   "rmr": false,
+   "total": 28,
+   "destaques": 4,
+   "vetados": 2,
+   "preco_mediano": 76818.09
+  },
+  {
+   "cidade": "Gloria Do Goita",
+   "rmr": false,
+   "total": 24,
+   "destaques": 8,
+   "vetados": 0,
+   "preco_mediano": 46622.715
+  },
+  {
+   "cidade": "Lagoa Do Carro",
+   "rmr": false,
+   "total": 24,
+   "destaques": 9,
+   "vetados": 1,
+   "preco_mediano": 63438.604999999996
+  },
+  {
+   "cidade": "Caruaru",
+   "rmr": false,
+   "total": 23,
+   "destaques": 4,
+   "vetados": 2,
+   "preco_mediano": 62856.87
+  },
+  {
+   "cidade": "Abreu E Lima",
+   "rmr": true,
+   "total": 21,
+   "destaques": 3,
+   "vetados": 1,
+   "preco_mediano": 81964.82
+  },
+  {
+   "cidade": "Recife",
+   "rmr": true,
+   "total": 19,
+   "destaques": 3,
+   "vetados": 9,
+   "preco_mediano": 195597.08
+  },
+  {
+   "cidade": "Jatauba",
+   "rmr": false,
+   "total": 19,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 16333.59
+  },
+  {
+   "cidade": "Santa Cruz Do Capibaribe",
+   "rmr": false,
+   "total": 12,
+   "destaques": 1,
+   "vetados": 0,
+   "preco_mediano": 96303.86499999999
+  },
+  {
+   "cidade": "Sao Bento Do Una",
+   "rmr": false,
+   "total": 12,
+   "destaques": 3,
+   "vetados": 1,
+   "preco_mediano": 75827.495
+  },
+  {
+   "cidade": "Gravata",
+   "rmr": false,
+   "total": 12,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 99831.56
+  },
+  {
+   "cidade": "Toritama",
+   "rmr": false,
+   "total": 10,
+   "destaques": 4,
+   "vetados": 0,
+   "preco_mediano": 164945.765
+  },
+  {
+   "cidade": "Bezerros",
+   "rmr": false,
+   "total": 8,
+   "destaques": 3,
+   "vetados": 0,
+   "preco_mediano": 60938.185
+  },
+  {
+   "cidade": "Garanhuns",
+   "rmr": false,
+   "total": 7,
+   "destaques": 1,
+   "vetados": 0,
+   "preco_mediano": 84892.14
+  },
+  {
+   "cidade": "Jupi",
+   "rmr": false,
+   "total": 6,
+   "destaques": 1,
+   "vetados": 0,
+   "preco_mediano": 38007.89
+  },
+  {
+   "cidade": "Itambe",
+   "rmr": false,
+   "total": 6,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 67775.13500000001
+  },
+  {
+   "cidade": "Paudalho",
+   "rmr": false,
+   "total": 5,
+   "destaques": 1,
+   "vetados": 0,
+   "preco_mediano": 211269.68
+  },
+  {
+   "cidade": "Ilha De Itamaraca",
+   "rmr": true,
+   "total": 5,
+   "destaques": 2,
+   "vetados": 0,
+   "preco_mediano": 103704.06
+  },
+  {
+   "cidade": "Arcoverde",
+   "rmr": false,
+   "total": 5,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 59023.95
+  },
+  {
+   "cidade": "Brejo Da Madre De Deus",
+   "rmr": false,
+   "total": 5,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 59437.1
+  },
+  {
+   "cidade": "Salgueiro",
+   "rmr": false,
+   "total": 5,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 85186.92
+  },
+  {
+   "cidade": "Sao Jose Da Coroa Grande",
+   "rmr": false,
+   "total": 5,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 45241.8
+  },
+  {
+   "cidade": "Pombos",
+   "rmr": false,
+   "total": 5,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 107733.7
+  },
+  {
+   "cidade": "Petrolina",
+   "rmr": false,
+   "total": 4,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 425267.23
+  },
+  {
+   "cidade": "Sirinhaem",
+   "rmr": false,
+   "total": 4,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 185681.91499999998
+  },
+  {
+   "cidade": "Exu",
+   "rmr": false,
+   "total": 3,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 81503.76
+  },
+  {
+   "cidade": "Alianca",
+   "rmr": false,
+   "total": 2,
+   "destaques": 1,
+   "vetados": 0,
+   "preco_mediano": 91887.49500000001
+  },
+  {
+   "cidade": "Jurema",
+   "rmr": false,
+   "total": 2,
+   "destaques": 1,
+   "vetados": 0,
+   "preco_mediano": 50498.41
+  },
+  {
+   "cidade": "Goiana",
+   "rmr": true,
+   "total": 2,
+   "destaques": 2,
+   "vetados": 0,
+   "preco_mediano": 36699.88
+  },
+  {
+   "cidade": "Carnaiba",
+   "rmr": false,
+   "total": 2,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 52039.345
+  },
+  {
+   "cidade": "Custodia",
+   "rmr": false,
+   "total": 2,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 62631.26
+  },
+  {
+   "cidade": "Serra Talhada",
+   "rmr": false,
+   "total": 2,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 75017.27
+  },
+  {
+   "cidade": "Ipojuca",
+   "rmr": true,
+   "total": 2,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 168223.265
+  },
+  {
+   "cidade": "Afogados Da Ingazeira",
+   "rmr": false,
+   "total": 2,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 111494.465
+  },
+  {
+   "cidade": "Aguas Belas",
+   "rmr": false,
+   "total": 2,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 836803.535
+  },
+  {
+   "cidade": "Altinho",
+   "rmr": false,
+   "total": 2,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 90746.77
+  },
+  {
+   "cidade": "Buenos Aires",
+   "rmr": false,
+   "total": 2,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 82428.435
+  },
+  {
+   "cidade": "Flores",
+   "rmr": false,
+   "total": 2,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 49049.405
+  },
+  {
+   "cidade": "Lajedo",
+   "rmr": false,
+   "total": 2,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 320251.065
+  },
+  {
+   "cidade": "Sertania",
+   "rmr": false,
+   "total": 2,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 132056.51
+  },
+  {
+   "cidade": "Santa Cruz Da Baixa Verde",
+   "rmr": false,
+   "total": 1,
+   "destaques": 1,
+   "vetados": 0,
+   "preco_mediano": 37720.84
+  },
+  {
+   "cidade": "Lagoa Do Ouro",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 267671.46
+  },
+  {
+   "cidade": "Ouricuri",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 403055.32
+  },
+  {
+   "cidade": "Sao Jose Do Belmonte",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 58819.01
+  },
+  {
+   "cidade": "Tacaimbo",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 70665.38
+  },
+  {
+   "cidade": "Terra Vermelha",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 87895.24
+  },
+  {
+   "cidade": "Moreno",
+   "rmr": true,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 76464.05
+  },
+  {
+   "cidade": "Bom Conselho",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 101904.73
+  },
+  {
+   "cidade": "Capoeiras",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 56444.48
+  },
+  {
+   "cidade": "Cha Grande",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 60206.09
+  },
+  {
+   "cidade": "Feira Nova",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 41070.08
+  },
+  {
+   "cidade": "Lagoa De Itaenga",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 71195.55
+  },
+  {
+   "cidade": "Sao Joaquim Do Monte",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 67715.99
+  },
+  {
+   "cidade": "Tamandare",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 2209887.34
+  },
+  {
+   "cidade": "Trindade",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 165322.22
+  },
+  {
+   "cidade": "Vitoria De Santo Antao",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 68737.18
+  },
+  {
+   "cidade": "Canhotinho",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 90000.0
+  },
+  {
+   "cidade": "Taquaritinga Do Norte",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 110000.0
+  },
+  {
+   "cidade": "Cabo De Santo Agostinho",
+   "rmr": true,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 1,
+   "preco_mediano": 232536.8
+  },
+  {
+   "cidade": "Granito",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 1,
+   "preco_mediano": 208660.0
+  }
+ ],
+ "classes": {
+  "alto": 62,
+  "medio": 300,
+  "baixo": 608,
+  "sem": 48,
+  "vetado": 42
+ },
+ "tipos": {
+  "Apartamento": 498,
+  "Casa": 488,
+  "Terreno": 60,
+  "Loja": 8,
+  "Sala comercial": 6
+ },
+ "premissas": [
+  {
+   "nome": "ITBI",
+   "valor": "3% do preço",
+   "nota": "Alíquota do Recife para transmissão onerosa. Outros municípios de PE variam, em geral entre 2% e 3% — usamos 3% como teto conservador."
+  },
+  {
+   "nome": "Escritura e registro",
+   "valor": "1.8% + R$ 800",
+   "nota": "Ordem de grandeza da tabela de custas do TJPE, mais certidões e despachante. Peça o cálculo exato ao cartório."
+  },
+  {
+   "nome": "Comissão do leiloeiro",
+   "valor": "5% da arrematação",
+   "nota": "Só em Leilão e Licitação. Não está no desconto que a Caixa anuncia."
+  },
+  {
+   "nome": "Reforma declarada",
+   "valor": "R$ 1.200/m². até 30% do preço",
+   "nota": "Quando a descrição da Caixa diz que o imóvel necessita reforma."
+  },
+  {
+   "nome": "Acerto mínimo",
+   "valor": "R$ 450/m². até 12% do preço",
+   "nota": "Pintura, louça e elétrica nos demais. Zero em terreno. O teto existe porque orçamento de obra acompanha o padrão do imóvel, não só a metragem — sem ele, o modelo condena todo imóvel barato."
+  },
+  {
+   "nome": "Provisão de desocupação",
+   "valor": "8% do preço. mínimo R$ 15.000",
+   "nota": "A lista da Caixa NÃO informa ocupação — conferido, zero menções em 1.060 imóveis de PE. Confira na página do imóvel e no edital. O piso não diminui em imóvel barato porque advogado e custas custam o mesmo."
+  }
+ ],
+ "avisos": [
+  {
+   "titulo": "Ocupação",
+   "texto": "Imóvel ocupado é vendido com o ocupante dentro. A desocupação é por conta do comprador: ação judicial, tempo (meses a anos) e custo de advogado. Boa parte do desconto da Caixa é exatamente o preço desse risco."
+  },
+  {
+   "titulo": "Estado de conservação",
+   "texto": "A venda é no estado em que o imóvel se encontra, e em geral sem visita interna. Reserve orçamento de reforma às cegas — some esse valor no campo de reforma antes de comparar preços."
+  },
+  {
+   "titulo": "Débitos anteriores",
+   "texto": "Condomínio e IPTU atrasados podem ficar com o comprador, dependendo do edital. Leia a cláusula de débitos ANTES de dar lance; em condomínio com cota alta, a dívida acumulada engole o desconto."
+  },
+  {
+   "titulo": "Condições de pagamento",
+   "texto": "Leilão e licitação costumam exigir pagamento à vista em prazo curto. Venda direta às vezes aceita financiamento e FGTS. Desconto que exige a vista é um ativo diferente de desconto financiável."
+  },
+  {
+   "titulo": "Comissão do leiloeiro",
+   "texto": "Em leilão há comissão do leiloeiro, normalmente 5% sobre o valor da arrematação, somada ao preço — e ela não entra no desconto anunciado."
+  },
+  {
+   "titulo": "Avaliação da Caixa",
+   "texto": "O 'valor de avaliação' é a referência do banco, não necessariamente o preço de mercado. Por isso cruzamos com o ITBI: quando as duas fontes concordam, o sinal é muito mais forte."
+  }
+ ],
+ "ocupacao": {
+  "ocupado": 2,
+  "desocupado": 0,
+  "nao_informada": 1058
+ },
+ "roteiro_desocupacao": {
+  "ocupado": {
+   "situacao": "Imóvel ocupado",
+   "resumo": "A desocupação corre por sua conta, em dinheiro e em tempo. É o custo que mais some das planilhas.",
+   "blocos": [
+    {
+     "titulo": "1. Tente o acordo antes de pensar em processo",
+     "passos": [
+      "Quem está dentro quase sempre é o antigo dono, que perdeu o imóvel para o banco. Vale procurar antes de qualquer medida judicial.",
+      "Negocia-se uma verba de desocupação e um prazo, com termo assinado — de preferência homologado em juízo, para virar título executivo.",
+      "Prazo típico: de algumas semanas a três meses.",
+      "Compensa porque, enquanto o processo corre, você paga IPTU e condomínio de um imóvel que não pode usar nem alugar."
+     ]
+    },
+    {
+     "titulo": "2. Se não houver acordo, o caminho é judicial",
+     "passos": [
+      "Quando a Caixa retomou por ALIENAÇÃO FIDUCIÁRIA (o padrão dos financiamentos mais recentes), o art. 30 da Lei 9.514/97 garante a quem comprou no leilão a reintegração na posse CONCEDIDA LIMINARMENTE, com 60 dias para desocupação, bastando comprovar a consolidação da propriedade.",
+      "Desde a Lei 14.711/2023, discussão sobre o contrato ou sobre o procedimento do leilão não trava mais a reintegração: segue e, se o ocupante tiver razão, resolve-se em perdas e danos.",
+      "Quando a retomada veio de EXECUÇÃO HIPOTECÁRIA ou adjudicação (contratos antigos), não existe essa liminar automática: é ação de imissão na posse pelo rito comum, bem mais lenta.",
+      "Na prática, mesmo com liminar, conte de 3 a 8 meses entre protocolar e a chave na mão. Sem liminar, de um a dois anos."
+     ]
+    },
+    {
+     "titulo": "3. O que pode travar — confira antes de dar lance",
+     "passos": [
+      "Locação averbada na matrícula pode ser oponível ao comprador. Peça a matrícula atualizada e leia.",
+      "Ocupante idoso, com criança pequena ou com problema de saúde: o juiz costuma alargar prazos.",
+      "Débitos de condomínio e IPTU: no acervo da Caixa é comum o comprador assumir. O edital diz de quem é.",
+      "O edital manda. Ele define responsabilidade pela desocupação, pelos débitos e o estado em que o imóvel é vendido."
+     ]
+    }
+   ]
+  },
+  "desocupado": {
+   "situacao": "Imóvel desocupado",
+   "resumo": "Sem provisão de desocupação na conta. Ainda assim, confirme com os próprios olhos antes de dar lance.",
+   "blocos": [
+    {
+     "titulo": "Confirme, não confie",
+     "passos": [
+      "A informação é do momento em que a página foi lida. Imóvel vazio é alvo de invasão justamente por estar vazio.",
+      "Vá até o endereço, ou peça a alguém de confiança. Pergunte no condomínio ou na vizinhança.",
+      "Reserve algo para fechadura, limpeza, religação de água e luz, e para o que a foto não mostra."
+     ]
+    },
+    {
+     "titulo": "3. O que pode travar — confira antes de dar lance",
+     "passos": [
+      "Locação averbada na matrícula pode ser oponível ao comprador. Peça a matrícula atualizada e leia.",
+      "Ocupante idoso, com criança pequena ou com problema de saúde: o juiz costuma alargar prazos.",
+      "Débitos de condomínio e IPTU: no acervo da Caixa é comum o comprador assumir. O edital diz de quem é.",
+      "O edital manda. Ele define responsabilidade pela desocupação, pelos débitos e o estado em que o imóvel é vendido."
+     ]
+    }
+   ]
+  },
+  "nao_informada": {
+   "situacao": "Ocupação não informada",
+   "resumo": "O arquivo que a Caixa publica não traz ocupação, e a página deste imóvel também não afirmou nada. Por precaução, trata-se como se pudesse estar ocupado.",
+   "blocos": [
+    {
+     "titulo": "Onde descobrir",
+     "passos": [
+      "O edital do imóvel, no site da Caixa, é o documento que responde. Baixe e leia antes de qualquer lance.",
+      "A matrícula atualizada mostra de onde veio a propriedade e se há locação averbada.",
+      "Visita ao endereço resolve em dez minutos o que nenhuma planilha resolve."
+     ]
+    },
+    {
+     "titulo": "1. Tente o acordo antes de pensar em processo",
+     "passos": [
+      "Quem está dentro quase sempre é o antigo dono, que perdeu o imóvel para o banco. Vale procurar antes de qualquer medida judicial.",
+      "Negocia-se uma verba de desocupação e um prazo, com termo assinado — de preferência homologado em juízo, para virar título executivo.",
+      "Prazo típico: de algumas semanas a três meses.",
+      "Compensa porque, enquanto o processo corre, você paga IPTU e condomínio de um imóvel que não pode usar nem alugar."
+     ]
+    },
+    {
+     "titulo": "2. Se não houver acordo, o caminho é judicial",
+     "passos": [
+      "Quando a Caixa retomou por ALIENAÇÃO FIDUCIÁRIA (o padrão dos financiamentos mais recentes), o art. 30 da Lei 9.514/97 garante a quem comprou no leilão a reintegração na posse CONCEDIDA LIMINARMENTE, com 60 dias para desocupação, bastando comprovar a consolidação da propriedade.",
+      "Desde a Lei 14.711/2023, discussão sobre o contrato ou sobre o procedimento do leilão não trava mais a reintegração: segue e, se o ocupante tiver razão, resolve-se em perdas e danos.",
+      "Quando a retomada veio de EXECUÇÃO HIPOTECÁRIA ou adjudicação (contratos antigos), não existe essa liminar automática: é ação de imissão na posse pelo rito comum, bem mais lenta.",
+      "Na prática, mesmo com liminar, conte de 3 a 8 meses entre protocolar e a chave na mão. Sem liminar, de um a dois anos."
+     ]
+    },
+    {
+     "titulo": "3. O que pode travar — confira antes de dar lance",
+     "passos": [
+      "Locação averbada na matrícula pode ser oponível ao comprador. Peça a matrícula atualizada e leia.",
+      "Ocupante idoso, com criança pequena ou com problema de saúde: o juiz costuma alargar prazos.",
+      "Débitos de condomínio e IPTU: no acervo da Caixa é comum o comprador assumir. O edital diz de quem é.",
+      "O edital manda. Ele define responsabilidade pela desocupação, pelos débitos e o estado em que o imóvel é vendido."
+     ]
+    }
+   ]
+  }
+ },
+ "aviso_juridico": "Isto é orientação geral, não consultoria jurídica. Prazos, custos e estratégia mudam conforme o caso, a vara e quem está no imóvel. Consulte um advogado antes de dar lance em imóvel ocupado.",
+ "repo": "",
+ "textos_ressalvas": [
+  "Imóvel ocupado: a desocupação corre por sua conta. Tente acordo antes de processo; veja o roteiro nos detalhes.",
+  "Não aceita financiamento — precisa do valor à vista.",
+  "A ocupação não consta no arquivo da Caixa nem foi afirmada na página do imóvel, então a provisão de desocupação é estimativa cega. O edital responde — leia antes de dar lance.",
+  "Fora da Região Metropolitana: mercado mais raso e revenda mais lenta. Confira quem seria o comprador quando você quiser sair.",
+  "Terreno: confira muro, posse, acesso e se há ocupação por terceiros, que não aparece em coluna nenhuma.",
+  "26 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "24 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "7 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "12 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "37 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "13 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "Leilão ou licitação: há comissão de leiloeiro e o prazo de pagamento é curto.",
+  "39 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "11 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "19 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "17 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "9 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "6 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "18 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "5 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "15 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "16 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "14 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "8 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "Armadilha: o preço pedido está acima da avaliação da própria Caixa. Em Leilão SFI o preço é o saldo da dívida, não um desconto — aqui não há desconto nenhum."
+ ]
+}
