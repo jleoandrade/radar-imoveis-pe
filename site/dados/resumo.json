@@ -1,40 +1,40 @@
 {
- "gerado_em": "2026-10-02T08:51-03:00",
- "proxima_atualizacao": "2026-10-03T06:10-03:00",
- "data_da_lista": "01/10/2026",
+ "gerado_em": "2026-10-03T11:17-03:00",
+ "proxima_atualizacao": "2026-10-04T06:10-03:00",
+ "data_da_lista": "02/10/2026",
  "uf": "PE",
- "total": 1058,
+ "total": 1043,
  "fora_do_ar": 0,
- "destaques": 197,
- "novos": 474,
+ "destaques": 198,
+ "novos": 476,
  "vetados": 42,
- "em_lote": 344,
- "na_rmr": 624,
- "desconto_anunciado_mediano": 0.4497,
- "desconto_real_mediano": 0.27990000000000004,
+ "em_lote": 343,
+ "na_rmr": 619,
+ "desconto_anunciado_mediano": 0.4505,
+ "desconto_real_mediano": 0.2811,
  "nota_destaque": 0.6,
  "cidades": [
   {
    "cidade": "Jaboatao Dos Guararapes",
    "rmr": true,
-   "total": 197,
-   "destaques": 18,
+   "total": 195,
+   "destaques": 16,
    "vetados": 9,
-   "preco_mediano": 87704.0
+   "preco_mediano": 87221.94
   },
   {
    "cidade": "Paulista",
    "rmr": true,
-   "total": 133,
-   "destaques": 37,
+   "total": 129,
+   "destaques": 36,
    "vetados": 9,
-   "preco_mediano": 90222.52
+   "preco_mediano": 89876.85
   },
   {
    "cidade": "Belo Jardim",
    "rmr": false,
    "total": 80,
-   "destaques": 13,
+   "destaques": 14,
    "vetados": 1,
    "preco_mediano": 53817.84
   },
@@ -49,32 +49,32 @@
   {
    "cidade": "Igarassu",
    "rmr": true,
-   "total": 74,
-   "destaques": 19,
+   "total": 75,
+   "destaques": 20,
    "vetados": 3,
-   "preco_mediano": 81406.73000000001
+   "preco_mediano": 81096.57
   },
   {
    "cidade": "Sao Lourenco Da Mata",
    "rmr": true,
    "total": 64,
-   "destaques": 11,
+   "destaques": 10,
    "vetados": 0,
-   "preco_mediano": 75601.78
+   "preco_mediano": 75801.965
   },
   {
    "cidade": "Olinda",
    "rmr": true,
    "total": 37,
-   "destaques": 6,
+   "destaques": 7,
    "vetados": 1,
    "preco_mediano": 100741.08
   },
   {
    "cidade": "Camaragibe",
    "rmr": true,
-   "total": 35,
-   "destaques": 2,
+   "total": 36,
+   "destaques": 3,
    "vetados": 1,
    "preco_mediano": 87819.45
   },
@@ -89,10 +89,10 @@
   {
    "cidade": "Carpina",
    "rmr": false,
-   "total": 28,
+   "total": 27,
    "destaques": 4,
    "vetados": 2,
-   "preco_mediano": 76818.09
+   "preco_mediano": 76592.86
   },
   {
    "cidade": "Gloria Do Goita",
@@ -119,14 +119,6 @@
    "preco_mediano": 62856.87
   },
   {
-   "cidade": "Abreu E Lima",
-   "rmr": true,
-   "total": 20,
-   "destaques": 3,
-   "vetados": 1,
-   "preco_mediano": 82843.01500000001
-  },
-  {
    "cidade": "Jatauba",
    "rmr": false,
    "total": 20,
@@ -135,20 +127,20 @@
    "preco_mediano": 16333.59
   },
   {
-   "cidade": "Recife",
+   "cidade": "Abreu E Lima",
    "rmr": true,
    "total": 19,
    "destaques": 3,
-   "vetados": 9,
-   "preco_mediano": 195597.08
+   "vetados": 1,
+   "preco_mediano": 81964.82
   },
   {
-   "cidade": "Santa Cruz Do Capibaribe",
-   "rmr": false,
-   "total": 12,
-   "destaques": 1,
-   "vetados": 0,
-   "preco_mediano": 96303.86499999999
+   "cidade": "Recife",
+   "rmr": true,
+   "total": 19,
+   "destaques": 4,
+   "vetados": 9,
+   "preco_mediano": 195597.08
   },
   {
    "cidade": "Sao Bento Do Una",
@@ -167,6 +159,14 @@
    "preco_mediano": 99831.56
   },
   {
+   "cidade": "Santa Cruz Do Capibaribe",
+   "rmr": false,
+   "total": 11,
+   "destaques": 1,
+   "vetados": 0,
+   "preco_mediano": 97200.0
+  },
+  {
    "cidade": "Toritama",
    "rmr": false,
    "total": 10,
@@ -183,14 +183,6 @@
    "preco_mediano": 62804.7
   },
   {
-   "cidade": "Garanhuns",
-   "rmr": false,
-   "total": 7,
-   "destaques": 1,
-   "vetados": 0,
-   "preco_mediano": 84892.14
-  },
-  {
    "cidade": "Jupi",
    "rmr": false,
    "total": 6,
@@ -205,6 +197,14 @@
    "destaques": 0,
    "vetados": 0,
    "preco_mediano": 67775.13500000001
+  },
+  {
+   "cidade": "Garanhuns",
+   "rmr": false,
+   "total": 5,
+   "destaques": 1,
+   "vetados": 0,
+   "preco_mediano": 156000.0
   },
   {
    "cidade": "Paudalho",
@@ -239,14 +239,6 @@
    "preco_mediano": 59437.1
   },
   {
-   "cidade": "Salgueiro",
-   "rmr": false,
-   "total": 5,
-   "destaques": 0,
-   "vetados": 0,
-   "preco_mediano": 85186.92
-  },
-  {
    "cidade": "Sao Jose Da Coroa Grande",
    "rmr": false,
    "total": 5,
@@ -255,20 +247,20 @@
    "preco_mediano": 45241.8
   },
   {
-   "cidade": "Pombos",
-   "rmr": false,
-   "total": 5,
-   "destaques": 0,
-   "vetados": 0,
-   "preco_mediano": 107733.7
-  },
-  {
    "cidade": "Petrolina",
    "rmr": false,
    "total": 4,
    "destaques": 0,
    "vetados": 0,
    "preco_mediano": 425267.23
+  },
+  {
+   "cidade": "Salgueiro",
+   "rmr": false,
+   "total": 4,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 87267.685
   },
   {
    "cidade": "Sirinhaem",
@@ -568,18 +560,18 @@
   }
  ],
  "classes": {
-  "alto": 68,
+  "alto": 70,
   "medio": 302,
-  "baixo": 600,
+  "baixo": 583,
   "sem": 46,
   "vetado": 42
  },
  "tipos": {
-  "Apartamento": 495,
-  "Casa": 489,
+  "Apartamento": 490,
+  "Casa": 480,
   "Terreno": 60,
   "Loja": 8,
-  "Sala comercial": 6
+  "Sala comercial": 5
  },
  "premissas": [
   {
@@ -640,9 +632,9 @@
   }
  ],
  "ocupacao": {
-  "ocupado": 3,
+  "ocupado": 4,
   "desocupado": 0,
-  "nao_informada": 1055
+  "nao_informada": 1039
  },
  "roteiro_desocupacao": {
   "ocupado": {
@@ -752,22 +744,21 @@
   "Fora da Região Metropolitana: mercado mais raso e revenda mais lenta. Confira quem seria o comprador quando você quiser sair.",
   "Terreno: confira muro, posse, acesso e se há ocupação por terceiros, que não aparece em coluna nenhuma.",
   "25 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
-  "27 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
-  "16 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "26 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "17 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "7 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "12 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "37 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
-  "13 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
-  "Leilão ou licitação: há comissão de leiloeiro e o prazo de pagamento é curto.",
-  "9 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "14 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "8 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "39 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "11 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "19 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "18 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
-  "17 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
-  "8 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "5 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "6 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
-  "14 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "16 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "Leilão ou licitação: há comissão de leiloeiro e o prazo de pagamento é curto.",
   "Armadilha: o preço pedido está acima da avaliação da própria Caixa. Em Leilão SFI o preço é o saldo da dívida, não um desconto — aqui não há desconto nenhum."
  ]
 }

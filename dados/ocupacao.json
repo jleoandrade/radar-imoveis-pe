@@ -6088,5 +6088,41 @@
 "trecho": "",
 "existe": "indefinido",
 "lido_em": "2026-10-02"
+},
+"8444420977865": {
+"situacao": "ocupado",
+"trecho": "Situação: Ocupado",
+"existe": "vivo",
+"lido_em": "2026-10-03"
+},
+"8787715854791": {
+"situacao": "nao_informada",
+"trecho": "",
+"existe": "indefinido",
+"lido_em": "2026-10-03"
+},
+"1444407357273": {
+"situacao": "nao_informada",
+"trecho": "",
+"existe": "indefinido",
+"lido_em": "2026-10-03"
+},
+"8444404841555": {
+"situacao": "nao_informada",
+"trecho": "",
+"existe": "indefinido",
+"lido_em": "2026-10-03"
+},
+"1444405343186": {
+"situacao": "nao_informada",
+"trecho": "",
+"existe": "indefinido",
+"lido_em": "2026-10-03"
+},
+"8787706203058": {
+"situacao": "nao_informada",
+"trecho": "",
+"existe": "indefinido",
+"lido_em": "2026-10-03"
 }
 }
