@@ -18,8 +18,20 @@ name: Atualizar radar
 
 on:
   schedule:
-    # O GitHub agenda em UTC. 09:10 UTC = 06:10 em Brasília (UTC-3).
-    - cron: "10 9 * * *"
+    # O GitHub SEMPRE agenda em UTC. Recife é UTC-3 o ano inteiro
+    # (Pernambuco nunca teve horário de verão), então some 3 horas.
+    #
+    # POR QUE TRÊS HORÁRIOS, E NÃO UM
+    # Execução agendada em repositório gratuito entra numa fila de baixa
+    # prioridade, e o GitHub avisa que pode atrasar — ou até descartar.
+    # Medido aqui: agendado para 06:10, rodou 11:17 num dia e 11:45 no
+    # outro. Cinco horas de atraso.
+    # Com três disparos, basta um pegar fila curta para os dados do dia
+    # entrarem. Não é desperdício: quando a lista não mudou, a execução
+    # termina em 40 segundos.
+    - cron: "10 9 * * *"     # 06:10 em Recife — manhã
+    - cron: "40 16 * * *"    # 13:40 em Recife — tarde
+    - cron: "25 23 * * *"    # 20:25 em Recife — noite
   workflow_dispatch:
   push:
     branches: [main]
