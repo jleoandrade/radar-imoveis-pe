@@ -46,6 +46,30 @@ OCUPACAO = RAIZ / "dados" / "ocupacao.json"
 SEMENTE = RAIZ / "dados" / "semente_historico.json"
 FUSO = timezone(timedelta(hours=-3))      # America/Sao_Paulo
 
+# Os horários que o robô tenta, em hora de Recife. TÊM DE BATER com os
+# três "cron" de .github/workflows/atualizar.yml, lembrando que lá os
+# números estão em UTC (some 3 horas: 06:10 daqui é 09:10 lá).
+# Mudou um, mude o outro — senão o site anuncia uma hora e o robô roda
+# em outra.
+HORARIOS = ((6, 10), (13, 40), (20, 25))
+
+
+def proxima_execucao(agora: datetime) -> datetime:
+    """O próximo horário programado depois de 'agora'.
+
+    Com três disparos por dia, "amanhã às 06:10" deixou de ser verdade:
+    quem roda de manhã tem a próxima à tarde, não no dia seguinte.
+    """
+    for hora, minuto in HORARIOS:
+        alvo = agora.replace(hour=hora, minute=minuto, second=0,
+                             microsecond=0)
+        if alvo > agora:
+            return alvo
+    hora, minuto = HORARIOS[0]
+    return (agora + timedelta(days=1)).replace(
+        hour=hora, minute=minuto, second=0, microsecond=0)
+
+
 # nota a partir da qual o imóvel entra no RSS e no destaque da página
 NOTA_DESTAQUE = 0.60
 # quantos dias um imóvel continua marcado como "novo"
@@ -450,9 +474,7 @@ def montar_resumo(imoveis: list[dict], gerado_em: datetime,
         classes[i["classe"]] = classes.get(i["classe"], 0) + 1
         tipos[i["tipo"]] = tipos.get(i["tipo"], 0) + 1
 
-    # a próxima execução programada: 06:10 do dia seguinte
-    proxima = (gerado_em + timedelta(days=1)).replace(
-        hour=6, minute=10, second=0, microsecond=0)
+    proxima = proxima_execucao(gerado_em)
 
     return {
         "gerado_em": gerado_em.isoformat(timespec="minutes"),

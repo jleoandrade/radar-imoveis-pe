@@ -178,7 +178,12 @@ svg.i { width: 1em; height: 1em; flex: none; fill: none; stroke: currentColor;
   background: var(--painel); border: 1px solid var(--borda);
   border-radius: 10px; padding: 10px 13px; min-width: 0;
   box-shadow: var(--sombra); position: relative; overflow: hidden;
+  /* coluna com o número ancorado na base: assim um rótulo que quebre em
+     duas linhas ("Desconto anunciado") não empurra o número para baixo e
+     desalinha a faixa inteira */
+  display: flex; flex-direction: column;
 }
+.numero dd { margin-top: auto }
 .numero::before {
   content: ""; position: absolute; inset: 0 auto 0 0; width: 3px;
   background: var(--borda-forte);
@@ -191,6 +196,25 @@ svg.i { width: 1em; height: 1em; flex: none; fill: none; stroke: currentColor;
   margin: 2px 0 0; font-family: var(--mono); font-size: 21px;
   font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: -.03em;
 }
+/* o total geral, ao lado do número filtrado: "12 de 197" */
+.numero dd i { font-style: normal; font-size: 12px; font-weight: 400;
+  color: var(--fraco); margin-left: 5px; letter-spacing: 0 }
+
+/* ---------------------------------------------- cards que são filtros */
+/* Quatro dos sete cards ligam o filtro que representam. Precisam parecer
+   clicáveis sem virar botão berrante: o aviso é a borda e o fundo
+   mudando quando o filtro está ligado. */
+.numero.clicavel {
+  cursor: pointer; text-align: left; font: inherit; color: inherit;
+  width: 100%;
+  transition: border-color .15s, background .15s;
+}
+.numero.clicavel:hover { border-color: var(--azul) }
+.numero.clicavel[aria-pressed="true"] {
+  background: var(--azul-fraco); border-color: var(--azul);
+}
+.numero.clicavel[aria-pressed="true"]::before { background: var(--azul) }
+.numero.clicavel[aria-pressed="true"] dt { color: var(--azul) }
 .numero small { display: block; font-family: var(--sans); font-size: 11px;
   font-weight: 400; color: var(--fraco) }
 .numero.destaque dd { color: var(--azul) }
@@ -364,6 +388,23 @@ select, input[type="search"], input[type="number"] {
 .item[data-cor="bloqueio"] .descontos .real b { color: var(--veto) }
 .item-acoes { display: flex; gap: 5px; justify-content: flex-end;
   flex-wrap: wrap }
+
+/* ----------------------------------------------------------- favoritos */
+/* Estrela vazia por padrão, cheia e âmbar quando guardado. A cor é a
+   mesma do aviso de ocupação de propósito: âmbar aqui não quer dizer
+   perigo, quer dizer "você marcou isto". */
+.botao.favorito { padding-left: 9px; padding-right: 9px }
+.botao.favorito svg.i { width: 15px; height: 15px }
+.botao.favorito[aria-pressed="true"] {
+  color: var(--atencao); border-color: var(--atencao);
+  background: var(--atencao-fundo);
+}
+.botao.favorito.largo { padding-left: 13px; padding-right: 13px }
+.item[data-fav-on="true"] { border-color: var(--atencao) }
+.acoes-gaveta { display: grid; gap: 7px }
+@media (min-width: 420px) {
+  .acoes-gaveta { grid-template-columns: auto minmax(0, 1fr) }
+}
 @media (max-width: 640px) { .item-acoes { justify-content: flex-start } }
 
 .vazio, .carregando {
@@ -661,6 +702,8 @@ table.cmp tr.txt td { white-space: normal; font-family: var(--sans);
     <symbol id="ic-doc" viewBox="0 0 24 24"><path d="M14 3H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7l-4-4z"/><path d="M14 3v4h4M9 13h6M9 17h6"/></symbol>
     <symbol id="ic-rss" viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1.5"/></symbol>
     <symbol id="ic-tema" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="ic-estrela" viewBox="0 0 24 24"><path d="m12 3.6 2.6 5.3 5.9.9-4.3 4.2 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.8l5.9-.9L12 3.6z"/></symbol>
+    <symbol id="ic-estrela-cheia" viewBox="0 0 24 24"><path fill="currentColor" stroke-width="1.2" d="m12 3.6 2.6 5.3 5.9.9-4.3 4.2 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.8l5.9-.9L12 3.6z"/></symbol>
     <symbol id="ic-atualizar" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></symbol>
   </defs>
 </svg>
@@ -711,6 +754,9 @@ table.cmp tr.txt td { white-space: normal; font-family: var(--sans);
       <label for="cidade">Cidade</label><select id="cidade"></select>
     </div>
     <div class="campo">
+      <label for="bairro">Bairro</label><select id="bairro"></select>
+    </div>
+    <div class="campo">
       <label for="tipo">Tipo</label><select id="tipo"></select>
     </div>
     <div class="campo">
@@ -742,6 +788,7 @@ table.cmp tr.txt td { white-space: normal; font-family: var(--sans);
       <div class="chips" id="chips">
         <button class="chip" type="button" data-f="destaques" aria-pressed="false">Destaques</button>
         <button class="chip" type="button" data-f="novos" aria-pressed="false">Novos</button>
+        <button class="chip" type="button" data-f="favoritos" aria-pressed="false">Favoritos</button>
         <button class="chip" type="button" data-f="rmr" aria-pressed="false">RMR</button>
         <button class="chip" type="button" data-f="financiavel" aria-pressed="false">Financiável</button>
         <button class="chip" type="button" data-f="comvaga" aria-pressed="false">Com vaga</button>
@@ -878,11 +925,59 @@ const escapar = t => String(t ?? "").replace(/[&<>"]/g,
 
 let TUDO = [], RESUMO = {}, TEXTOS = [], pagina = 1, aba = "lista";
 let escolhidos = [];
-const filtros = { busca: "", cidade: "", tipo: "", pmin: null, pmax: null,
-  amin: null, amax: null, quartos: "", destaques: false, novos: false,
-  rmr: false, financiavel: false, comvaga: false, sem_veto: true,
-  sem_lote: false, ordem: "nota" };
+const filtros = { busca: "", cidade: "", bairro: "", tipo: "", pmin: null,
+  pmax: null, amin: null, amax: null, quartos: "", destaques: false,
+  novos: false, rmr: false, financiavel: false, comvaga: false,
+  favoritos: false, sem_veto: true, sem_lote: false, ordem: "nota" };
 const $ = s => document.querySelector(s);
+
+/* ==================================================================
+   FAVORITOS
+   Ficam no navegador de quem marcou, em localStorage. Não vão para o
+   repositório nem para lugar nenhum: são SEUS, deste aparelho e deste
+   navegador. Marcar no computador não aparece no celular.
+   Guardar no servidor exigiria conta, login e um banco — e este
+   projeto é um site estático de propósito.
+   ================================================================== */
+const CHAVE_FAVORITOS = "radar-pe:favoritos";
+let FAVORITOS = new Set();
+
+function lerFavoritos() {
+  try {
+    const bruto = localStorage.getItem(CHAVE_FAVORITOS);
+    FAVORITOS = new Set(bruto ? JSON.parse(bruto) : []);
+  } catch (_) {
+    // janela anônima, armazenamento bloqueado, JSON corrompido: segue
+    // com a lista vazia em vez de quebrar a página inteira
+    FAVORITOS = new Set();
+  }
+}
+
+function gravarFavoritos() {
+  try {
+    localStorage.setItem(CHAVE_FAVORITOS, JSON.stringify([...FAVORITOS]));
+  } catch (_) { /* sem espaço ou bloqueado: a marcação vale só esta visita */ }
+}
+
+function alternarFavorito(id) {
+  FAVORITOS.has(id) ? FAVORITOS.delete(id) : FAVORITOS.add(id);
+  gravarFavoritos();
+  desenhar();
+  // se a gaveta estiver aberta neste imóvel, redesenha para o botão
+  // de dentro acompanhar o de fora
+  const g = document.querySelector(".gaveta");
+  if (g && g.dataset.id === id) { fecharDetalhe(); abrirDetalhe(id) }
+}
+
+const botaoFavorito = (id, grande) => {
+  const marcado = FAVORITOS.has(id);
+  return `<button class="botao botao-pequeno favorito${grande ? " largo" : ""}"
+    type="button" data-fav="${escapar(id)}" aria-pressed="${marcado}"
+    title="${marcado ? "Tirar dos favoritos" : "Guardar nos favoritos"}"
+    aria-label="${marcado ? "Tirar dos favoritos" : "Guardar nos favoritos"}"
+    >${icone(marcado ? "estrela-cheia" : "estrela")}${
+      grande ? (marcado ? " Nos favoritos" : " Guardar nos favoritos") : ""}</button>`;
+};
 
 async function carregar() {
   if (DADOS_EMBUTIDOS) return DADOS_EMBUTIDOS;
@@ -892,22 +987,29 @@ async function carregar() {
 }
 
 /* ------------------------------------------------------------- filtrar */
-function filtrar() {
+/* 'ignorar' deixa calcular quantos imóveis um filtro está escondendo.
+   O card de Vetados precisa disso: com "Sem vetados" ligado eles nunca
+   entram no resultado, e o card mostraria zero para sempre em vez de
+   dizer quantos estão escondidos ali. */
+function filtrar(ignorar) {
   const b = filtros.busca.toLowerCase().trim();
+  const vale = n => filtros[n] && n !== ignorar;
   return TUDO.filter(i => {
     if (filtros.cidade && i.cidade !== filtros.cidade) return false;
+    if (filtros.bairro && i.bairro !== filtros.bairro) return false;
     if (filtros.tipo && i.tipo !== filtros.tipo) return false;
     if (filtros.pmin != null && i.preco < filtros.pmin) return false;
     if (filtros.pmax != null && i.preco > filtros.pmax) return false;
     if (filtros.amin != null && i.area < filtros.amin) return false;
     if (filtros.amax != null && i.area > filtros.amax) return false;
     if (filtros.quartos && i.quartos < +filtros.quartos) return false;
-    if (filtros.destaques && i.nota < RESUMO.nota_destaque) return false;
-    if (filtros.novos && !i.novo) return false;
+    if (vale("destaques") && i.nota < RESUMO.nota_destaque) return false;
+    if (vale("novos") && !i.novo) return false;
+    if (vale("favoritos") && !FAVORITOS.has(i.id)) return false;
     if (filtros.rmr && !i.na_rmr) return false;
     if (filtros.financiavel && !i.aceita_financiamento) return false;
     if (filtros.comvaga && !i.vagas) return false;
-    if (filtros.sem_veto && i.classe === "vetado") return false;
+    if (vale("sem_veto") && i.classe === "vetado") return false;
     if (filtros.sem_lote && i.lote >= 5) return false;
     if (b && !(i.bairro + " " + i.cidade + " " + i.endereco + " " + i.tipo)
       .toLowerCase().includes(b)) return false;
@@ -963,7 +1065,8 @@ function cartao(i) {
     `<span>${icone(ic)}${t}</span>`).join("");
 
   const dentro = escolhidos.includes(i.id);
-  return `<article class="item" data-cor="${i.cor}" data-id="${i.id}">
+  return `<article class="item" data-cor="${i.cor}" data-id="${i.id}"
+    data-fav-on="${FAVORITOS.has(i.id)}">
     <div class="faixa-cor"></div>
     <div class="item-meio">
       <div class="item-titulo"><h3>${i.tipo}</h3>
@@ -981,6 +1084,7 @@ function cartao(i) {
         <div class="real"><span>Real</span><b>${pct(i.desconto_real)}</b></div>
       </div>
       <div class="item-acoes">
+        ${botaoFavorito(i.id)}
         <button class="botao botao-pequeno" data-acao="detalhe">Detalhes</button>
         <button class="botao botao-pequeno" data-acao="comparar">
           ${dentro ? "✓ comparando" : "+ comparar"}</button>
@@ -996,6 +1100,7 @@ function cartao(i) {
 function desenhar() {
   const achados = filtrar();
   const mostrar = achados.slice(0, pagina * POR_PAGINA);
+  desenharNumeros(achados);
 
   $("#contagem").innerHTML = achados.length
     ? `<strong>${num(achados.length)}</strong> de ${num(TUDO.length)} imóveis`
@@ -1026,9 +1131,10 @@ function desenhar() {
 // o estado "limpo" dos filtros, num lugar só: serve para contar quantos
 // estão ligados e para o botão "Limpar filtros" não sair do compasso
 const PADRAO_FILTROS = {
-  busca: "", cidade: "", tipo: "", pmin: null, pmax: null, amin: null,
-  amax: null, quartos: "", destaques: false, novos: false, rmr: false,
-  financiavel: false, comvaga: false, sem_veto: true, sem_lote: false,
+  busca: "", cidade: "", bairro: "", tipo: "", pmin: null, pmax: null,
+  amin: null, amax: null, quartos: "", destaques: false, novos: false,
+  rmr: false, financiavel: false, comvaga: false, favoritos: false,
+  sem_veto: true, sem_lote: false,
 };
 const contarFiltros = () => Object.keys(PADRAO_FILTROS)
   .filter(k => filtros[k] !== PADRAO_FILTROS[k]).length;
@@ -1108,8 +1214,8 @@ function abrirDetalhe(id) {
 
   document.body.insertAdjacentHTML("beforeend", `
     <div class="sombra-gaveta" data-sair></div>
-    <aside class="gaveta" data-cor="${i.cor}" role="dialog" aria-modal="true"
-           aria-label="Detalhes do imóvel">
+    <aside class="gaveta" data-cor="${i.cor}" data-id="${escapar(i.id)}"
+           role="dialog" aria-modal="true" aria-label="Detalhes do imóvel">
       <div class="gaveta-topo">
         <div class="linha">
           <div style="min-width:0">
@@ -1211,9 +1317,12 @@ function abrirDetalhe(id) {
           </div>
         </div>
 
-        <button class="botao ${dentro ? "" : "botao-forte"}" type="button"
-                data-cmp="${i.id}">${icone("comparar")}
-          ${dentro ? "Tirar da comparação" : "Adicionar à comparação"}</button>
+        <div class="acoes-gaveta">
+          ${botaoFavorito(i.id, true)}
+          <button class="botao ${dentro ? "" : "botao-forte"}" type="button"
+                  data-cmp="${i.id}">${icone("comparar")}
+            ${dentro ? "Tirar da comparação" : "Adicionar à comparação"}</button>
+        </div>
       </div>
     </aside>`);
 
@@ -1388,7 +1497,9 @@ async function recarregarDados() {
   TEXTOS = RESUMO.textos_ressalvas || [];
   const cidade = $("#cidade").value, tipo = $("#tipo").value;
   desenharTopo();
-  $("#cidade").value = cidade; $("#tipo").value = tipo;   // preserva a escolha
+  // preserva a escolha de quem estava olhando quando os dados trocaram
+  $("#cidade").value = cidade; $("#tipo").value = tipo;
+  encherBairros();
   desenhar(); desenharComparacao();
 }
 
@@ -1485,20 +1596,6 @@ function desenharTopo() {
      <span>${icone("relogio")}Próxima atualização automática
        <b>${dataHora(RESUMO.proxima_atualizacao)}</b></span>${fora}`;
 
-  const campos = [
-    ["Imóveis em PE", num(RESUMO.total), `${num(RESUMO.na_rmr)} na RMR`, "", "casa"],
-    ["Destaques", num(RESUMO.destaques),
-      `nota ≥ ${RESUMO.nota_destaque.toFixed(2)}`, "destaque", "comparar"],
-    ["Novos", num(RESUMO.novos), "últimos 7 dias", "", "alerta"],
-    ["Desconto anunciado", pct(RESUMO.desconto_anunciado_mediano), "mediana", "", "doc"],
-    ["Desconto real", pct(RESUMO.desconto_real_mediano),
-      "depois de todo custo", "destaque", "dinheiro"],
-    ["Vetados", num(RESUMO.vetados), "preço > avaliação", "", "x"],
-  ];
-  $("#numeros").innerHTML = campos.map(([r, v, s, c, ic]) =>
-    `<div class="numero ${c}"><dt>${icone(ic)}${r}</dt>
-     <dd>${v}<small>${s}</small></dd></div>`).join("");
-
   $("#premissas").innerHTML = (RESUMO.premissas || []).map(p =>
     `<div class="premissa"><b>${escapar(p.nome)}</b>
      <code>${escapar(p.valor)}</code><p>${escapar(p.nota)}</p></div>`).join("");
@@ -1512,6 +1609,95 @@ function desenharTopo() {
   $("#tipo").innerHTML = `<option value="">Todos</option>`
     + Object.entries(RESUMO.tipos || {}).sort((a, b) => b[1] - a[1])
       .map(([t, n]) => `<option value="${escapar(t)}">${escapar(t)} (${n})</option>`).join("");
+  encherBairros();
+}
+
+/* ------------------------------------------------------------- bairros */
+/* São 237 bairros na lista inteira, e 133 deles têm um imóvel só. Uma
+   lista dessas é inútil, então ela segue a cidade escolhida: com Olinda
+   no filtro, só os bairros de Olinda aparecem. Os nomes saem do próprio
+   radar.json, não de um campo novo — assim nada precisa mudar no robô. */
+function encherBairros() {
+  const dentro = filtros.cidade
+    ? TUDO.filter(i => i.cidade === filtros.cidade) : TUDO;
+  const conta = new Map();
+  for (const i of dentro) {
+    if (i.bairro) conta.set(i.bairro, (conta.get(i.bairro) || 0) + 1);
+  }
+  const lista = [...conta.entries()].sort(
+    (a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "pt-BR"));
+
+  // se o bairro escolhido não existe na cidade nova, some sozinho
+  if (filtros.bairro && !conta.has(filtros.bairro)) filtros.bairro = "";
+
+  $("#bairro").innerHTML = `<option value="">Todos (${lista.length})</option>`
+    + lista.map(([b, n]) =>
+      `<option value="${escapar(b)}">${escapar(b)} (${n})</option>`).join("");
+  $("#bairro").value = filtros.bairro;
+  $("#bairro").disabled = !lista.length;
+}
+
+/* ---------------------------------------------------- números do topo */
+/* Os números contam o CONJUNTO FILTRADO, não o estado inteiro: filtrando
+   por um bairro, o card de Destaques diz quantos destaques existem ali.
+   O total geral fica embaixo, em letra miúda, para a referência não se
+   perder. Os quatro cards de contagem também ligam e desligam o filtro
+   correspondente — é o caminho mais curto entre ver um número e ver os
+   imóveis por trás dele. */
+function desenharNumeros(achados) {
+  const todos = TUDO.length;
+  const destaque = i => i.nota >= RESUMO.nota_destaque;
+  const conta = (lista, f) => lista.reduce((n, i) => n + (f(i) ? 1 : 0), 0);
+
+  // os vetados são contados ignorando o próprio filtro que os esconde,
+  // senão o card mostraria zero para sempre
+  const comVetados = filtrar("sem_veto");
+  const mediana = f => {
+    const v = achados.map(f).filter(x => x != null).sort((a, b) => a - b);
+    if (!v.length) return null;
+    const m = v.length >> 1;
+    return v.length % 2 ? v[m] : (v[m - 1] + v[m]) / 2;
+  };
+
+  const campos = [
+    { chave: "", rotulo: "Imóveis em PE", icone: "casa",
+      valor: num(achados.length),
+      sub: `${num(conta(achados, i => i.na_rmr))} na RMR`,
+      total: achados.length !== todos ? `de ${num(todos)}` : "" },
+    { chave: "destaques", rotulo: "Destaques", icone: "comparar", forte: true,
+      valor: num(conta(achados, destaque)),
+      sub: `nota ≥ ${RESUMO.nota_destaque.toFixed(2)}`,
+      total: `de ${num(RESUMO.destaques)}` },
+    { chave: "novos", rotulo: "Novos", icone: "alerta",
+      valor: num(conta(achados, i => i.novo)), sub: "últimos 7 dias",
+      total: `de ${num(RESUMO.novos)}` },
+    { chave: "favoritos", rotulo: "Favoritos", icone: "estrela-cheia",
+      valor: num(conta(achados, i => FAVORITOS.has(i.id))),
+      sub: "guardados por você", total: `de ${num(FAVORITOS.size)}` },
+    { chave: "", rotulo: "Desconto anunciado", icone: "doc",
+      valor: pct(mediana(i => i.desconto_anunciado)), sub: "mediana" },
+    { chave: "", rotulo: "Desconto real", icone: "dinheiro", forte: true,
+      valor: pct(mediana(i => i.desconto_real)), sub: "depois de todo custo" },
+    { chave: "sem_veto", rotulo: "Vetados", icone: "x", invertido: true,
+      valor: num(conta(comVetados, i => i.classe === "vetado")),
+      sub: filtros.sem_veto ? "escondidos — clique" : "preço > avaliação",
+      total: `de ${num(RESUMO.vetados)}` },
+  ];
+
+  $("#numeros").innerHTML = campos.map(c => {
+    const ligado = c.chave &&
+      (c.invertido ? !filtros[c.chave] : filtros[c.chave]);
+    const corpo = `<dt>${icone(c.icone)}${c.rotulo}</dt>
+      <dd>${c.valor}${c.total ? `<i>${c.total}</i>` : ""}
+      <small>${c.sub}</small></dd>`;
+    if (!c.chave) {
+      return `<div class="numero ${c.forte ? "destaque" : ""}">${corpo}</div>`;
+    }
+    return `<button class="numero clicavel ${c.forte ? "destaque" : ""}"
+      type="button" data-card="${c.chave}" aria-pressed="${ligado}"
+      title="${ligado ? "Desligar este filtro" : "Ligar este filtro"}"
+      >${corpo}</button>`;
+  }).join("");
 }
 
 /* -------------------------------------------------------------- eventos */
@@ -1528,7 +1714,12 @@ function ligarEventos() {
   const numeroOu = v => v === "" ? null : +v;
 
   $("#busca").oninput = e => { filtros.busca = e.target.value; atualiza() };
-  $("#cidade").onchange = e => { filtros.cidade = e.target.value; atualiza() };
+  $("#cidade").onchange = e => {
+    filtros.cidade = e.target.value;
+    encherBairros();            // a lista de bairros segue a cidade
+    atualiza();
+  };
+  $("#bairro").onchange = e => { filtros.bairro = e.target.value; atualiza() };
   $("#tipo").onchange = e => { filtros.tipo = e.target.value; atualiza() };
   $("#ordem").onchange = e => { filtros.ordem = e.target.value; atualiza() };
   $("#quartos").onchange = e => { filtros.quartos = e.target.value; atualiza() };
@@ -1546,11 +1737,24 @@ function ligarEventos() {
 
   $("#limpar").onclick = () => {
     Object.assign(filtros, PADRAO_FILTROS);
-    ["busca", "cidade", "tipo", "pmin", "pmax", "amin", "amax", "quartos"]
-      .forEach(id => { $("#" + id).value = "" });
+    ["busca", "cidade", "bairro", "tipo", "pmin", "pmax", "amin", "amax",
+     "quartos"].forEach(id => { $("#" + id).value = "" });
+    encherBairros();
     document.querySelectorAll(".chip").forEach(c =>
       c.setAttribute("aria-pressed", String(c.dataset.f === "sem_veto")));
     atualiza();
+  };
+
+  // Os cards de contagem ligam e desligam o filtro que representam.
+  // "Vetados" é invertido: o filtro guardado é "sem_veto", então clicar
+  // no card para VER os vetados significa DESLIGAR esse filtro.
+  $("#numeros").onclick = e => {
+    const card = e.target.closest("[data-card]"); if (!card) return;
+    const chave = card.dataset.card;
+    filtros[chave] = !filtros[chave];
+    const chip = document.querySelector(`.chip[data-f="${chave}"]`);
+    if (chip) chip.setAttribute("aria-pressed", String(filtros[chave]));
+    pagina = 1; desenhar();
   };
 
   $("#mais").onclick = () => { pagina++; desenhar() };
@@ -1560,6 +1764,15 @@ function ligarEventos() {
 
   $("#lista").onclick = e => {
     const item = e.target.closest(".item"); if (!item) return;
+
+    // Clicar em qualquer lugar do cartão abre o detalhe — MENOS nos
+    // controles que já fazem outra coisa. Sem esta linha, tocar na
+    // estrela guardava o favorito E abria a gaveta por cima; e clicar
+    // em "Página da Caixa" abria o site da Caixa numa aba E a gaveta
+    // por baixo, que é o tipo de defeito que só aparece quando se
+    // testa o clique de verdade.
+    if (e.target.closest("[data-fav], a")) return;
+
     const acao = e.target.closest("[data-acao]");
     if (acao && acao.dataset.acao === "comparar") alternarCmp(item.dataset.id);
     else abrirDetalhe(item.dataset.id);
@@ -1567,6 +1780,8 @@ function ligarEventos() {
 
   // cliques que vêm da gaveta e da tabela de comparação
   document.addEventListener("click", e => {
+    const fav = e.target.closest("[data-fav]");
+    if (fav) return alternarFavorito(fav.dataset.fav);
     if (e.target.closest("[data-sair]")) return fecharDetalhe();
     const cmp = e.target.closest("[data-cmp]");
     if (cmp) return alternarCmp(cmp.dataset.cmp);
@@ -1623,6 +1838,7 @@ function ligarEventos() {
 }
 
 (async () => {
+  lerFavoritos();
   ligarEventos();
   try {
     const dados = await carregar();
