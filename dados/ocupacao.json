@@ -6124,5 +6124,29 @@
 "trecho": "",
 "existe": "indefinido",
 "lido_em": "2026-10-03"
+},
+"8444403934053": {
+"situacao": "ocupado",
+"trecho": "Situação: Ocupado",
+"existe": "vivo",
+"lido_em": "2026-10-06"
+},
+"8787713839221": {
+"situacao": "nao_informada",
+"trecho": "",
+"existe": "indefinido",
+"lido_em": "2026-10-06"
+},
+"8787704827860": {
+"situacao": "nao_informada",
+"trecho": "",
+"existe": "indefinido",
+"lido_em": "2026-10-06"
+},
+"1555528122686": {
+"situacao": "nao_informada",
+"trecho": "",
+"existe": "indefinido",
+"lido_em": "2026-10-06"
 }
 }

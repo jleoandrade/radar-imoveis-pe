@@ -1,42 +1,42 @@
 {
- "gerado_em": "2026-10-05T19:53-03:00",
- "proxima_atualizacao": "2026-10-05T20:25-03:00",
- "data_da_lista": "02/10/2026",
+ "gerado_em": "2026-10-06T00:10-03:00",
+ "proxima_atualizacao": "2026-10-06T06:10-03:00",
+ "data_da_lista": "05/10/2026",
  "uf": "PE",
- "total": 1043,
+ "total": 1013,
  "fora_do_ar": 0,
- "destaques": 198,
- "novos": 476,
- "vetados": 42,
+ "destaques": 194,
+ "novos": 460,
+ "vetados": 34,
  "em_lote": 343,
- "na_rmr": 619,
- "desconto_anunciado_mediano": 0.4505,
- "desconto_real_mediano": 0.2811,
+ "na_rmr": 598,
+ "desconto_anunciado_mediano": 0.4518,
+ "desconto_real_mediano": 0.2824,
  "nota_destaque": 0.6,
  "cidades": [
   {
    "cidade": "Jaboatao Dos Guararapes",
    "rmr": true,
-   "total": 195,
-   "destaques": 16,
-   "vetados": 9,
-   "preco_mediano": 87221.94
+   "total": 190,
+   "destaques": 15,
+   "vetados": 8,
+   "preco_mediano": 86942.705
   },
   {
    "cidade": "Paulista",
    "rmr": true,
-   "total": 129,
-   "destaques": 36,
-   "vetados": 9,
-   "preco_mediano": 89876.85
+   "total": 124,
+   "destaques": 35,
+   "vetados": 7,
+   "preco_mediano": 90049.685
   },
   {
    "cidade": "Belo Jardim",
    "rmr": false,
-   "total": 80,
+   "total": 79,
    "destaques": 14,
-   "vetados": 1,
-   "preco_mediano": 53817.84
+   "vetados": 0,
+   "preco_mediano": 53005.88
   },
   {
    "cidade": "Cha De Alegria",
@@ -49,50 +49,42 @@
   {
    "cidade": "Igarassu",
    "rmr": true,
-   "total": 75,
-   "destaques": 20,
-   "vetados": 3,
-   "preco_mediano": 81096.57
+   "total": 71,
+   "destaques": 21,
+   "vetados": 1,
+   "preco_mediano": 78525.22
   },
   {
    "cidade": "Sao Lourenco Da Mata",
    "rmr": true,
-   "total": 64,
-   "destaques": 10,
+   "total": 65,
+   "destaques": 11,
    "vetados": 0,
-   "preco_mediano": 75801.965
-  },
-  {
-   "cidade": "Olinda",
-   "rmr": true,
-   "total": 37,
-   "destaques": 7,
-   "vetados": 1,
-   "preco_mediano": 100741.08
+   "preco_mediano": 75484.41
   },
   {
    "cidade": "Camaragibe",
    "rmr": true,
-   "total": 36,
+   "total": 35,
    "destaques": 3,
-   "vetados": 1,
+   "vetados": 0,
    "preco_mediano": 87819.45
+  },
+  {
+   "cidade": "Olinda",
+   "rmr": true,
+   "total": 34,
+   "destaques": 6,
+   "vetados": 0,
+   "preco_mediano": 92914.61
   },
   {
    "cidade": "Itapissuma",
    "rmr": true,
-   "total": 34,
-   "destaques": 19,
+   "total": 32,
+   "destaques": 17,
    "vetados": 0,
-   "preco_mediano": 43669.03
-  },
-  {
-   "cidade": "Carpina",
-   "rmr": false,
-   "total": 27,
-   "destaques": 4,
-   "vetados": 2,
-   "preco_mediano": 76592.86
+   "preco_mediano": 44608.515
   },
   {
    "cidade": "Gloria Do Goita",
@@ -103,17 +95,25 @@
    "preco_mediano": 45746.71
   },
   {
+   "cidade": "Carpina",
+   "rmr": false,
+   "total": 26,
+   "destaques": 3,
+   "vetados": 2,
+   "preco_mediano": 78825.10500000001
+  },
+  {
    "cidade": "Lagoa Do Carro",
    "rmr": false,
-   "total": 24,
+   "total": 23,
    "destaques": 9,
-   "vetados": 1,
-   "preco_mediano": 63438.604999999996
+   "vetados": 0,
+   "preco_mediano": 62074.1
   },
   {
    "cidade": "Caruaru",
    "rmr": false,
-   "total": 23,
+   "total": 21,
    "destaques": 4,
    "vetados": 2,
    "preco_mediano": 62856.87
@@ -143,28 +143,20 @@
    "preco_mediano": 195597.08
   },
   {
+   "cidade": "Gravata",
+   "rmr": false,
+   "total": 13,
+   "destaques": 0,
+   "vetados": 0,
+   "preco_mediano": 102831.13
+  },
+  {
    "cidade": "Sao Bento Do Una",
    "rmr": false,
    "total": 12,
    "destaques": 3,
    "vetados": 1,
    "preco_mediano": 75827.495
-  },
-  {
-   "cidade": "Gravata",
-   "rmr": false,
-   "total": 12,
-   "destaques": 0,
-   "vetados": 0,
-   "preco_mediano": 99831.56
-  },
-  {
-   "cidade": "Santa Cruz Do Capibaribe",
-   "rmr": false,
-   "total": 11,
-   "destaques": 1,
-   "vetados": 0,
-   "preco_mediano": 97200.0
   },
   {
    "cidade": "Toritama",
@@ -175,12 +167,20 @@
    "preco_mediano": 164945.765
   },
   {
+   "cidade": "Santa Cruz Do Capibaribe",
+   "rmr": false,
+   "total": 10,
+   "destaques": 1,
+   "vetados": 0,
+   "preco_mediano": 96592.92
+  },
+  {
    "cidade": "Bezerros",
    "rmr": false,
-   "total": 7,
+   "total": 6,
    "destaques": 2,
    "vetados": 0,
-   "preco_mediano": 62804.7
+   "preco_mediano": 62041.59
   },
   {
    "cidade": "Jupi",
@@ -197,14 +197,6 @@
    "destaques": 0,
    "vetados": 0,
    "preco_mediano": 67775.13500000001
-  },
-  {
-   "cidade": "Garanhuns",
-   "rmr": false,
-   "total": 5,
-   "destaques": 1,
-   "vetados": 0,
-   "preco_mediano": 156000.0
   },
   {
    "cidade": "Paudalho",
@@ -271,6 +263,14 @@
    "preco_mediano": 185681.91499999998
   },
   {
+   "cidade": "Garanhuns",
+   "rmr": false,
+   "total": 3,
+   "destaques": 1,
+   "vetados": 0,
+   "preco_mediano": 160005.33
+  },
+  {
    "cidade": "Exu",
    "rmr": false,
    "total": 3,
@@ -325,14 +325,6 @@
    "destaques": 0,
    "vetados": 0,
    "preco_mediano": 75017.27
-  },
-  {
-   "cidade": "Ipojuca",
-   "rmr": true,
-   "total": 2,
-   "destaques": 0,
-   "vetados": 0,
-   "preco_mediano": 168223.265
   },
   {
    "cidade": "Afogados Da Ingazeira",
@@ -471,14 +463,6 @@
    "preco_mediano": 56444.48
   },
   {
-   "cidade": "Cha Grande",
-   "rmr": false,
-   "total": 1,
-   "destaques": 0,
-   "vetados": 0,
-   "preco_mediano": 60206.09
-  },
-  {
    "cidade": "Feira Nova",
    "rmr": false,
    "total": 1,
@@ -532,15 +516,7 @@
    "total": 1,
    "destaques": 0,
    "vetados": 0,
-   "preco_mediano": 90000.0
-  },
-  {
-   "cidade": "Taquaritinga Do Norte",
-   "rmr": false,
-   "total": 1,
-   "destaques": 0,
-   "vetados": 0,
-   "preco_mediano": 110000.0
+   "preco_mediano": 55391.45
   },
   {
    "cidade": "Cabo De Santo Agostinho",
@@ -556,22 +532,30 @@
    "total": 1,
    "destaques": 0,
    "vetados": 1,
-   "preco_mediano": 208660.0
+   "preco_mediano": 853287.28
+  },
+  {
+   "cidade": "Taquaritinga Do Norte",
+   "rmr": false,
+   "total": 1,
+   "destaques": 0,
+   "vetados": 1,
+   "preco_mediano": 162594.65
   }
  ],
  "classes": {
-  "alto": 70,
-  "medio": 302,
-  "baixo": 583,
-  "sem": 46,
-  "vetado": 42
+  "alto": 69,
+  "medio": 301,
+  "baixo": 568,
+  "sem": 41,
+  "vetado": 34
  },
  "tipos": {
-  "Apartamento": 490,
-  "Casa": 480,
-  "Terreno": 60,
+  "Apartamento": 481,
+  "Casa": 463,
+  "Terreno": 57,
   "Loja": 8,
-  "Sala comercial": 5
+  "Sala comercial": 4
  },
  "premissas": [
   {
@@ -634,7 +618,7 @@
  "ocupacao": {
   "ocupado": 5,
   "desocupado": 0,
-  "nao_informada": 1038
+  "nao_informada": 1008
  },
  "roteiro_desocupacao": {
   "ocupado": {
@@ -743,22 +727,22 @@
   "A ocupação não consta no arquivo da Caixa nem foi afirmada na página do imóvel, então a provisão de desocupação é estimativa cega. O edital responde — leia antes de dar lance.",
   "Fora da Região Metropolitana: mercado mais raso e revenda mais lenta. Confira quem seria o comprador quando você quiser sair.",
   "Terreno: confira muro, posse, acesso e se há ocupação por terceiros, que não aparece em coluna nenhuma.",
-  "25 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "26 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
-  "17 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "16 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "7 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "12 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "37 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
-  "14 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "8 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "39 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "11 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "19 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "17 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "18 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "5 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
+  "14 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "6 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
-  "16 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "Leilão ou licitação: há comissão de leiloeiro e o prazo de pagamento é curto.",
+  "13 unidades quase idênticas nesta mesma lista: é empreendimento retomado em bloco, não escassez. Quem compra uma concorre com as outras na revenda.",
   "Armadilha: o preço pedido está acima da avaliação da própria Caixa. Em Leilão SFI o preço é o saldo da dívida, não um desconto — aqui não há desconto nenhum."
  ]
 }
