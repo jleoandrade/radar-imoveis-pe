@@ -1,6 +1,6 @@
 {
- "gerado_em": "2026-10-07T13:24-03:00",
- "proxima_atualizacao": "2026-10-07T13:40-03:00",
+ "gerado_em": "2026-10-07T18:31-03:00",
+ "proxima_atualizacao": "2026-10-07T20:25-03:00",
  "data_da_lista": "06/10/2026",
  "uf": "PE",
  "total": 1074,
@@ -632,9 +632,9 @@
   }
  ],
  "ocupacao": {
-  "ocupado": 5,
+  "ocupado": 6,
   "desocupado": 0,
-  "nao_informada": 1069
+  "nao_informada": 1068
  },
  "roteiro_desocupacao": {
   "ocupado": {
