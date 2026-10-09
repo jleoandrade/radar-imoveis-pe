@@ -1,6 +1,6 @@
 {
- "gerado_em": "2026-10-09T13:09-03:00",
- "proxima_atualizacao": "2026-10-09T13:40-03:00",
+ "gerado_em": "2026-10-09T18:12-03:00",
+ "proxima_atualizacao": "2026-10-09T20:25-03:00",
  "data_da_lista": "08/10/2026",
  "uf": "PE",
  "total": 1158,
@@ -593,8 +593,8 @@
  ],
  "classes": {
   "alto": 67,
-  "medio": 334,
-  "baixo": 634,
+  "medio": 335,
+  "baixo": 633,
   "sem": 69,
   "vetado": 54
  },
@@ -664,8 +664,8 @@
   }
  ],
  "ocupacao": {
-  "ocupado": 4,
-  "desocupado": 1,
+  "ocupado": 3,
+  "desocupado": 2,
   "nao_informada": 1153
  },
  "roteiro_desocupacao": {
